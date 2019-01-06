@@ -1,4 +1,4 @@
 # ProjectX Docs
 
 ### Server Structure
-![alt text](https://github.com/Garyyyyy/projectX/Servers.png)
+![Alt text](https://github.com/Garyyyyy/projectX/blob/master/Servers%20.png)
