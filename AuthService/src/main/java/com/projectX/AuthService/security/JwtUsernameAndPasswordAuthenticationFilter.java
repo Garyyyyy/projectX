@@ -58,6 +58,7 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
 			
 			// 3. Authentication manager authenticate the user, and use UserDetialsServiceImpl::loadUserByUsername() method to load the user.
 			System.out.println("234");
+			System.out.println("authToken: "+authToken.getName() + authToken.isAuthenticated());
 			return authManager.authenticate(authToken);
 			
 		} catch (IOException e) {
@@ -70,7 +71,7 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
 	@Override
 	protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain,
 			Authentication auth) throws IOException, ServletException {
-		System.out.println("2345");
+		
 		Long now = System.currentTimeMillis();
 		String token = Jwts.builder()
 			.setSubject(auth.getName())	
