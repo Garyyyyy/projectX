@@ -67,7 +67,7 @@ public class AppUserJPAResource {
 		appUserRepository.deleteById(id);
 	}
 	
-	@PostMapping("/jpa/users")
+	@PostMapping("/jpa/user")
 	public ResponseEntity<Object> createUser(@Valid @RequestBody AppUser user){
 		
 		AppUser savedUser = appUserRepository.save(user);
