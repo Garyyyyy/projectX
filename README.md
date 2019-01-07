@@ -15,6 +15,12 @@ If you already have DB created and some data in it,  don't want DB drop and crea
 
 5. Start each server in order: ServiceRegistry -> AuthService -> StudioService -> ConfigService -> ZuulService
 
+6. To create DB with host & port defined in Postgres:
+	```
+	createdb -h localhost -p 5432 -U ygong projectX
+
+	```
+
 ### API
 
 Sign Up
